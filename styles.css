@@ -25,11 +25,12 @@ a:hover {
 
 .main-nav {
   width: 100%;
-  background: black;
+  background: #0399ff;
   min-height: 30px;
   padding: 10px;
   position: fixed;
   text-align: center;
+  opacity: 0.9;
 }
 .nav {
   display: flex;
@@ -53,6 +54,12 @@ a:hover {
 }
 .nav a:hover {
   color: white
+}
+.nav a:visited {
+  color: white;
+}
+.nav a:link {
+  color: white;
 }
 
 header {
@@ -89,7 +96,7 @@ header .profile-image:hover {
   color: rgb(255, 255, 255);
   
 }
- .background, .goals, .hobbies, .experience{
+ .background, .goals, .hobbies, .experience, .projects{
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
@@ -100,7 +107,7 @@ header .profile-image:hover {
   transition: all .5s;
   text-align: center;
 }
-.background:hover, .goals:hover, .hobbies:hover, .experience:hover {
+.background:hover, .goals:hover, .hobbies:hover, .experience:hover, .projects:hover {
   border-color: #6fc791;
 }
 
@@ -183,6 +190,7 @@ ul.hobbieslist {
     height: auto;
     opacity: 0.2; 
 }
+
 .skills {
   position: relative;
   z-index: 2;
@@ -243,6 +251,51 @@ ul.hobbieslist {
     width: 25%;
     height: auto;
     opacity: 0.3;
+}
+
+.projects {
+  position: relative;
+  overflow: hidden;
+}
+.projects h2 {
+  position: relative;
+  z-index: 2;
+} 
+.projects h3 {
+  position: relative;
+  z-index: 2;
+} 
+.projects p {
+  position: relative;
+  z-index: 2;
+}
+.projects img {
+  position: absolute;
+    left: 0;
+    top: 0rem;
+    width: 25%;
+    height: auto;
+    opacity: 0.3;
+}
+.projects a:link {
+  border-radius: 6px;
+  display: inline-block;
+  background: #9B8AE5;
+  color: white;
+  padding: 5px 10px;
+  margin: 2px;
+}
+.projects a:visited {
+  border-radius: 6px;
+  display: inline-block;
+  background: #9B8AE5;
+  color: white;
+  padding: 5px 10px;
+  margin: 2px;
+}
+.projects a:hover{
+  opacity: .4;
+  transition: all .5s;
 }
 /*  */
 
