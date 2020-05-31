@@ -64,12 +64,11 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('images/lowell.jpg') no-repeat top center ;
+  background: linear-gradient(to bottom,#FFBF07, transparent),
+  url('images/lowell.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
-}
-header {
   line-height: 1.5;
 }
 header .profile-image {
@@ -77,14 +76,13 @@ header .profile-image {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid orange;
+  border: 3px solid #9B8AE5;
   transition: all .5s;
 }
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
 }
 .tag {
-  background-color: #FF9902;
   color: white;
   padding: 10px;
   border-radius: 5px;
@@ -92,8 +90,9 @@ header .profile-image:hover {
   margin: 10px auto;
 } 
 .location {
-  background-color: #0499FF;
   color: rgb(255, 255, 255);
+  font-weight: bold;
+  margin-top: -1rem;
   
 }
  .background, .goals, .hobbies, .experience, .projects{
@@ -253,6 +252,11 @@ ul.hobbieslist {
     opacity: 0.3;
 }
 
+#allprojects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .projects {
   position: relative;
   overflow: hidden;
@@ -378,5 +382,4 @@ a.social:hover {
   }
 
 }
-
 
